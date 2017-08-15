@@ -55,7 +55,7 @@ table {
 }
 
 .landing-container {
-  line-height: 8em;
+  line-height: 15vh;
   height: 100%;
   width: 100%;
   display: flex;
@@ -67,10 +67,10 @@ table {
 
 .landing-title {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 100px;
+  font-size: 8vw;
 }
 
 .landing-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
+  font-size: 3vw;
 }
