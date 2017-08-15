@@ -45,32 +45,32 @@ table {
 	border-spacing: 0;
 }
 
-/* Landing */
+/* Flexbox */
 
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.landing-container {
-  line-height: 15vh;
-  height: 100%;
-  width: 100%;
+.flex-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
-  text-align: center;
   align-items: center;
+  align-content: center;
 }
 
-.landing-title {
+.flex-item {
+  margin: auto;
+  align-self: center;
+}
+
+.flex-title {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 8vw;
+  font-size: 100px;
+  text-align: center;
+  margin: auto;
 }
 
-.landing-text {
+.flex-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3vw;
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
 }
