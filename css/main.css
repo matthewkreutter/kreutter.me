@@ -48,6 +48,8 @@ table {
 /* Flexbox */
 
 .flex-container {
+	height: 100vh;
+	width: 100vw;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -56,21 +58,16 @@ table {
   align-content: center;
 }
 
-.flex-item {
-  margin: auto;
-  align-self: center;
-}
-
 .flex-title {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 100px;
   text-align: center;
-  margin: auto;
+	margin-bottom: 50px;
 }
 
 .flex-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
   text-align: center;
-  margin: auto;
+	opacity: 0.7;
 }
