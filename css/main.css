@@ -62,7 +62,7 @@ table {
 
 .landing-title {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 6vw;
+  font-size: 12vmin;
   text-align: center;
 
   -webkit-animation: moveup 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -71,12 +71,12 @@ table {
      -o-animation: moveup 2s; /* Opera < 12.1 */
         animation: moveup 2s;
 
-   margin-bottom: 10vh;
+   margin-bottom: 8vmin;
 }
 
 .landing-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.5vw;
+  font-size: 4vmin;
   text-align: center;
   opacity: 0.7;
 }
@@ -85,8 +85,8 @@ table {
 
 .list-inline {
 	text-align: center;
-	font-size: 3vw;
-	padding: 40px;
+	font-size: 5vmin;
+	padding: 4vmin;
 }
 
 .list-inline a {
@@ -147,30 +147,30 @@ body {
 /* Move-up */
 
 @keyframes moveup {
-    from { margin-bottom: 0vh; }
-    to   { margin-bottom: 10vh; }
+    from { margin-bottom: 0vmin; }
+    to   { margin-bottom: 8vmin; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes moveup {
-    from { margin-bottom: 0vh; }
-    to   { margin-bottom: 10vh; }
+    from { margin-bottom: 0vmin; }
+    to   { margin-bottom: 8vmin; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes moveup {
-    from { margin-bottom: 0vh; }
-    to   { margin-bottom: 10vh; }
+    from { margin-bottom: 0vmin; }
+    to   { margin-bottom: 8vmin; }
 }
 
 /* Internet Explorer */
 @-ms-keyframes moveup {
-    from { margin-bottom: 0vh; }
-    to   { margin-bottom: 10vh; }
+    from { margin-bottom: 0vmin; }
+    to   { margin-bottom: 8vmin; }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes moveup {
-    from { margin-bottom: 0vh; }
-    to   { margin-bottom: 10vh; }
+    from { margin-bottom: 0vmin; }
+    to   { margin-bottom: 8vmin; }
 }
