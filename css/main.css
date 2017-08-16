@@ -59,11 +59,7 @@ table {
 }
 
 .flex-title {
-<<<<<<< HEAD
 	width: 50vw;
-=======
-	width: 50%;
->>>>>>> 6687b693a5e47bc7bf5046c562f7508d885d1693
   font-family: 'Josefin Sans', sans-serif;
   font-size: 100px;
   text-align: center;
@@ -71,11 +67,7 @@ table {
 }
 
 .flex-text {
-<<<<<<< HEAD
 	width: 70vw;
-=======
-	width: 70%;
->>>>>>> 6687b693a5e47bc7bf5046c562f7508d885d1693
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
   text-align: center;
