@@ -56,20 +56,44 @@ table {
   justify-content: center;
   align-items: center;
   align-content: center;
+	line-height: 4REM;
 }
 
-.flex-title {
-	width: 50vw;
+/* Landing */
+
+.landing-title {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 100px;
+  font-size: 6vw;
   text-align: center;
 	margin-bottom: 50px;
 }
 
-.flex-text {
-	width: 70vw;
+.landing-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
+  font-size: 2.5vw;
   text-align: center;
 	opacity: 0.7;
+}
+
+/* Lists */
+
+.list-inline {
+	text-align: center;
+	font-size: 3vw;
+}
+
+.list-inline a {
+	color: #000000;
+	opacity: 0.7;
+	transform: scale(1,1);
+	-webkit-transition: opacity 300ms ease;
+	-moz-transition: opacity 300ms ease;
+	-ms-transition: opacity 300ms ease;
+	-o-transition: opacity 300ms ease;
+	transition: opacity 300ms ease;
+}
+
+.list-inline a:hover {
+	text-decoration: none;
+	opacity: 1;
 }
