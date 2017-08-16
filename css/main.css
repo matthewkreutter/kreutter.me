@@ -71,7 +71,7 @@ table {
      -o-animation: moveup 2s; /* Opera < 12.1 */
         animation: moveup 2s;
 
-   margin-bottom: 15vh;
+   margin-bottom: 10vh;
 }
 
 .landing-text {
@@ -148,29 +148,29 @@ body {
 
 @keyframes moveup {
     from { margin-bottom: 0vh; }
-    to   { margin-bottom: 15vh; }
+    to   { margin-bottom: 10vh; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes moveup {
     from { margin-bottom: 0vh; }
-    to   { margin-bottom: 15vh; }
+    to   { margin-bottom: 10vh; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes moveup {
     from { margin-bottom: 0vh; }
-    to   { margin-bottom: 15vh; }
+    to   { margin-bottom: 10vh; }
 }
 
 /* Internet Explorer */
 @-ms-keyframes moveup {
     from { margin-bottom: 0vh; }
-    to   { margin-bottom: 15vh; }
+    to   { margin-bottom: 10vh; }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes moveup {
     from { margin-bottom: 0vh; }
-    to   { margin-bottom: 15vh; }
+    to   { margin-bottom: 10vh; }
 }
