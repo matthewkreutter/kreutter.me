@@ -64,6 +64,14 @@ table {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 6vw;
   text-align: center;
+
+  -webkit-animation: moveup 3s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: moveup 3s; /* Firefox < 16 */
+    -ms-animation: moveup 3s; /* Internet Explorer */
+     -o-animation: moveup 3s; /* Opera < 12.1 */
+        animation: moveup 3s;
+
+   margin-bottom: 100px;
 }
 
 .landing-text {
@@ -134,4 +142,35 @@ body {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+/* Move-up */
+
+@keyframes moveup {
+    from { margin-bottom: 0px; }
+    to   { margin-bottom: 100px; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes moveup {
+    from { margin-bottom: 0px; }
+    to   { margin-bottom: 100px; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes moveup {
+    from { margin-bottom: 0px; }
+    to   { margin-bottom: 100px; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes moveup {
+    from { margin-bottom: 0px; }
+    to   { margin-bottom: 100px; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes moveup {
+    from { margin-bottom: 0px; }
+    to   { margin-bottom: 100px; }
 }
