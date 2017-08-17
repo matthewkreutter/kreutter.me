@@ -10,6 +10,8 @@
     <script src="https://use.fontawesome.com/514aa6aeb9.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Pushy -->
+    <link rel="stylesheet" type="text/css" href="css/pushy.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
@@ -17,6 +19,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   </head>
   <body>
+    <nav class="pushy pushy-right">
+      <div class="pushy-content">
+          <ul>
+              <li class="pushy-link"><a href="#">About Me</a></li>
+              <li class="pushy-link"><a href="#">Work / Projects</a></li>
+              <li class="pushy-link"><a href="#">Contact</a></li>
+          </ul>
+      </div>
+    </nav>
+    <div class="site-overlay"></div>
+    <a class="menu-btn pull-right">☰</a>
     <div class="flex-landing">
       <div class="landing-title">
         <p>Matthew S. Kreutter</p>
@@ -61,5 +74,6 @@
         );
       });
     </script>
+    <script type="text/javascript" src="js/pushy.min.js"></script>
   </body>
 </html>
