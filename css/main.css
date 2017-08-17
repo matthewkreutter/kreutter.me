@@ -50,10 +50,40 @@ table {
 
 /* General Styles */
 
+.about-me {
+  display: inline;
+}
+
+.work-projects {
+  display: none;
+}
+
+.contact {
+  display: none;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.85;
+  transform: scale(1,1);
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -ms-transition: opacity 300ms ease;
+  -o-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  padding: 2vmin;
+}
+
+.contact a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
 /* Flexbox */
 
 .flex-landing {
-	height: 80vh;
+	height: 30vh;
 	width: 100vw;
   display: flex;
   flex-direction: column;
@@ -66,11 +96,13 @@ table {
 }
 
 .flex-portfolio {
+  height: 40vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
 
   color: #000000;
@@ -83,20 +115,31 @@ table {
   font-size: 12vmin;
   text-align: center;
 
-  -webkit-animation: moveup 2s; /* Safari, Chrome and Opera > 12.1 */
-   -moz-animation: moveup 2s; /* Firefox < 16 */
-    -ms-animation: moveup 2s; /* Internet Explorer */
-     -o-animation: moveup 2s; /* Opera < 12.1 */
-        animation: moveup 2s;
+  -webkit-animation: moveup 1.5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: moveup 1.5s; /* Firefox < 16 */
+      -ms-animation: moveup 1.5s; /* Internet Explorer */
+       -o-animation: moveup 1.5s; /* Opera < 12.1 */
+          animation: moveup 1.5s;
 
-   margin-bottom: 6vmin;
+   margin-bottom: 4vmin;
 }
 
 .landing-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 4vmin;
-  text-align: center;
+  font-size: 3vmin;
   opacity: 0.7;
+  line-height: 4vmin;
+  width: 60%;
+}
+
+.landing-text h1 {
+  font-size: 4vmin;
+  padding-bottom: 3vmin;
+  text-align: center;
+}
+
+.landing-text p {
+  text-align: justify;
 }
 
 .landing-link {
@@ -113,11 +156,11 @@ table {
 	flex-wrap: wrap;
 	justify-content: center;
   align-items: center;
-  align-content: space-between;
+  align-content: space-around;
 }
 
 .portfolio img {
-	width: 40vw;
+	width: 50vw;
 	height: auto;
 }
 
@@ -135,6 +178,27 @@ table {
     text-decoration: none;
     opacity: 1;
     transform: scale(1.03,1.03);
+}
+
+/* Featured box */
+
+.featured-box {
+  flex: auto;
+  border: 1px solid red;
+  margin-bottom: 2vmin;
+  height: 30vmin;
+}
+
+.featured-box h2 {
+  font-size: 3.3vmin;
+  padding-bottom: 3vmin;
+  padding-top: 2vmin;
+  text-align: center;
+}
+
+.featured-box p {
+  font-size: 2vmin;
+  padding: 0vmin 3vmin;
 }
 
 /* Lists */
@@ -204,29 +268,29 @@ body {
 
 @keyframes moveup {
     from { margin-bottom: 0vmin; }
-    to   { margin-bottom: 6vmin; }
+    to   { margin-bottom: 4vmin; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes moveup {
     from { margin-bottom: 0vmin; }
-    to   { margin-bottom: 6vmin; }
+    to   { margin-bottom: 4vmin; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes moveup {
     from { margin-bottom: 0vmin; }
-    to   { margin-bottom: 6vmin; }
+    to   { margin-bottom: 4vmin; }
 }
 
 /* Internet Explorer */
 @-ms-keyframes moveup {
     from { margin-bottom: 0vmin; }
-    to   { margin-bottom: 6vmin; }
+    to   { margin-bottom: 4vmin; }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes moveup {
     from { margin-bottom: 0vmin; }
-    to   { margin-bottom: 6vmin; }
+    to   { margin-bottom: 4vmin; }
 }

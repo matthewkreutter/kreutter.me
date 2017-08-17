@@ -22,9 +22,10 @@
     <nav class="pushy pushy-right">
       <div class="pushy-content">
           <ul>
-              <li class="pushy-link"><a href="#">About Me</a></li>
-              <li class="pushy-link"><a href="#">Work / Projects</a></li>
-              <li class="pushy-link"><a href="#">Contact</a></li>
+              <li class="pushy-link"><a href="#" id="about-me">About Me</a></li>
+              <li class="pushy-link"><a href="#" id="work-projects">Work / Projects</a></li>
+              <li class="pushy-link"><a href="assets/resume.pdf" target="_blank">Resume</a>
+              <!-- <li class="pushy-link"><a href="#" id="contact">Contact</a></li> -->
           </ul>
       </div>
     </nav>
@@ -37,11 +38,53 @@
       <div class="list-inline">
         <a href="http://github.com/matthewkreutter/" target="_blank"><i class="fa fa-github"></i></a>
         <a href="http://linkedin.com/in/matthew-kreutter" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="assets/resume.pdf" target="_blank"><i class="fa fa-file-text"></i></a>
+        <a href="mailto:matthew.kreutter@gmail.com" target="_top"><i class="fa fa-envelope"></i></a>
       </div>
     </div>
-    <!--
+    <br>
     <div class="flex-portfolio">
+      <div class="landing-text about-me">
+        <h1>About Me</h1>
+        <p>I'm a senior at Washington University in St. Louis, currently pursuing a BS in Computer Science with a minor in Entrepreneurship.<br><br> I like building food, listening to software, and eating music, and enjoy approaching things a little differently than the status quo.</p>
+      </div>
+      <div class="landing-text work-projects">
+        <h1>Work Experience / Projects</h1>
+        <p>I've interned all over the place, from the energy sector to a philanthropic sports equipment supplier, and each experience has given me some perspective on how software impacts our lives.<br><br> Take a look below at some of the stuff I've accomplished in and around the industry. If you'd prefer a more minimalist, nitty-gritty overview, check out my resume or my LinkedIn.</p>
+        <br><br>
+        <div class="featured-box">
+          <h2>IMC Financial Markets LOGO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="featured-box">
+          <h2>Nisa Investment Advisors LOGO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="featured-box">
+          <h2>Visa, Inc. LOGO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="featured-box">
+          <h2>Washington University in St. Louis LOGO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="featured-box">
+          <h2>Kizazi LOGO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="featured-box">
+          <h2>Frontier Utilities LOGO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+      </div>
+      <!--
+      <div class="landing-text contact">
+        <h1>Contact</h1>
+        <a href="mailto:matthew.kreutter@gmail.com" target="_top">matthew.kreutter<span style="font-size: 2vmin">(at)</span>gmail<span style="font-size: 2vmin">(dot)</span>com</a>
+      </div>
+      -->
+    </div>
+    <!--
+    <div class="work-projects">
       <div class="portfolio">
         <a href="https://github.com/matthewkreutter/Lone-Commando" target="_blank" class="portfolio-hover"><img src="assets/lone-commando-still.png" id="animate-lone-commando"></a>
         <a href="https://github.com/matthewkreutter/Dot-Eat-Dot" target="_blank" class="portfolio-hover"><img src="assets/dot-eat-dot-still.png" id="animate-dot-eat-dot"></a>
@@ -50,28 +93,63 @@
     </div>
     -->
     <script>
+      var which = 1;
+      function clearAll() {
+        $(".work-projects").fadeOut();
+        $(".contact").fadeOut();
+        $(".about-me").fadeOut();
+      }
+      function fadeInAboutMe(){
+        $(".about-me").fadeIn();
+      }
+      function fadeInWorkProjects(){
+        $(".work-projects").fadeIn();
+      }
+      function fadeInContact(){
+        $(".contact").fadeIn();
+      }
       $(document).ready(function ()
       {
         $("#animate-lone-commando").hover(
-          function ()
-          {
+          function () {
             $(this).attr("src", "assets/lone-commando.gif");
           },
-          function ()
-          {
+          function () {
             $(this).attr("src", "assets/lone-commando-still.png");
           }
         );
         $("#animate-dot-eat-dot").hover(
-          function ()
-          {
+          function () {
             $(this).attr("src", "assets/dot-eat-dot.gif");
           },
-          function ()
-          {
+          function () {
             $(this).attr("src", "assets/dot-eat-dot-still.png");
           }
         );
+        $("#about-me").click(
+          function() {
+            if(which != 1) {
+              clearAll();
+              setTimeout(function(){fadeInAboutMe()}, 400);
+              which = 1;
+            }
+        });
+        $("#work-projects").click(
+          function() {
+            if(which != 2) {
+              clearAll();
+              setTimeout(function(){fadeInWorkProjects()}, 400);
+              which = 2;
+            }
+        });
+        $("#contact").click(
+          function() {
+            if(which != 3) {
+              clearAll();
+              setTimeout(function(){fadeInContact()}, 400);
+              which = 3;
+            }
+        });
       });
     </script>
     <script type="text/javascript" src="js/pushy.min.js"></script>
