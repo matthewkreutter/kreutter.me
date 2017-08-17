@@ -13,25 +13,53 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="flex-container">
+    <div class="flex-landing">
       <div class="landing-title">
         <p>Matthew S. Kreutter</p>
       </div>
-      <div class="landing-text">
-        <p>I'm currently under construction. Come back later!</p>
-      </div>
-      <!--
-      <div class="landing-link">
-        <a href="#lightbox-test">Testing Lightbox</a>
-        <a href="#_" class="lightbox" id="lightbox-test">Testing Lightbox HELLO!!</a>
-      </div>
-      -->
       <div class="list-inline">
-        <a href="http://linkedin.com/in/matthew-kreutter" target="_blank"><i class="fa fa-linkedin"></i></a>
         <a href="http://github.com/matthewkreutter/" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="http://linkedin.com/in/matthew-kreutter" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="assets/resume.pdf" target="_blank"><i class="fa fa-file-text"></i></a>
       </div>
     </div>
+    <!--
+    <div class="flex-portfolio">
+      <div class="portfolio">
+        <a href="https://github.com/matthewkreutter/Lone-Commando" target="_blank" class="portfolio-hover"><img src="assets/lone-commando-still.png" id="animate-lone-commando"></a>
+        <a href="https://github.com/matthewkreutter/Dot-Eat-Dot" target="_blank" class="portfolio-hover"><img src="assets/dot-eat-dot-still.png" id="animate-dot-eat-dot"></a>
+        <a href="https://www.kizazi.com/" target="_blank"><img src="assets/KizaziLanding.png" class="portfolio-hover"></a>
+      </div>
+    </div>
+    -->
+    <script>
+      $(document).ready(function ()
+      {
+        $("#animate-lone-commando").hover(
+          function ()
+          {
+            $(this).attr("src", "assets/lone-commando.gif");
+          },
+          function ()
+          {
+            $(this).attr("src", "assets/lone-commando-still.png");
+          }
+        );
+        $("#animate-dot-eat-dot").hover(
+          function ()
+          {
+            $(this).attr("src", "assets/dot-eat-dot.gif");
+          },
+          function ()
+          {
+            $(this).attr("src", "assets/dot-eat-dot-still.png");
+          }
+        );
+      });
+    </script>
   </body>
 </html>
