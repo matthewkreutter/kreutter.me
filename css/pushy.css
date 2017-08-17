@@ -3,9 +3,10 @@
 * https://github.com/christophery/pushy/
 * by Christopher Yee */
 /* Menu Appearance */
+
 .pushy {
   position: fixed;
-  width: 200px;
+  width: 35vmin;
   height: 100%;
   top: 0;
   z-index: 9999;
@@ -17,14 +18,14 @@
 .pushy a {
   display: block;
   color: #b3b3b1;
-  padding: 15px 30px;
+  margin: 4vmin 0vmin;
   text-decoration: none;
 }
 .pushy a:hover {
   color: #FFF;
 }
 .pushy ul:first-child {
-  margin-top: 10px;
+  margin-top: 36vh;
 }
 .pushy.pushy-left {
   left: 0;
@@ -41,30 +42,31 @@
 }
 
 /* Menu Movement */
+
 .pushy-left {
-  -webkit-transform: translate3d(-200px, 0, 0);
-  -ms-transform: translate3d(-200px, 0, 0);
-  transform: translate3d(-200px, 0, 0);
+  -webkit-transform: translate3d(-35vmin, 0, 0);
+  -ms-transform: translate3d(-35vmin, 0, 0);
+  transform: translate3d(-35vmin, 0, 0);
 }
 
 .pushy-open-left #container,
 .pushy-open-left .push {
-  -webkit-transform: translate3d(200px, 0, 0);
-  -ms-transform: translate3d(200px, 0, 0);
-  transform: translate3d(200px, 0, 0);
+  -webkit-transform: translate3d(35vmin, 0, 0);
+  -ms-transform: translate3d(35vmin, 0, 0);
+  transform: translate3d(35vmin, 0, 0);
 }
 
 .pushy-right {
-  -webkit-transform: translate3d(200px, 0, 0);
-  -ms-transform: translate3d(200px, 0, 0);
-  transform: translate3d(200px, 0, 0);
+  -webkit-transform: translate3d(35vmin, 0, 0);
+  -ms-transform: translate3d(35vmin, 0, 0);
+  transform: translate3d(35vmin, 0, 0);
 }
 
 .pushy-open-right #container,
 .pushy-open-right .push {
-  -webkit-transform: translate3d(-200px, 0, 0);
-  -ms-transform: translate3d(-200px, 0, 0);
-  transform: translate3d(-200px, 0, 0);
+  -webkit-transform: translate3d(-35vmin, 0, 0);
+  -ms-transform: translate3d(-35vmin, 0, 0);
+  transform: translate3d(-35vmin, 0, 0);
 }
 
 .pushy-open-left .pushy,
@@ -86,6 +88,7 @@
 }
 
 /* Menu Transitions */
+
 #container,
 .pushy,
 .push {
@@ -97,6 +100,7 @@
 }
 
 /* Site Overlay */
+
 .site-overlay {
   display: none;
 }
@@ -131,6 +135,7 @@
     opacity: 1;
   }
 }
+
 /* Submenu Appearance */
 .pushy-submenu {
   /* Submenu Buttons */
