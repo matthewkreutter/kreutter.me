@@ -50,6 +50,10 @@ table {
 
 /* General Styles */
 
+html {
+    overflow-y:scroll;
+}
+
 .about-me {
   display: inline;
 }
@@ -112,7 +116,7 @@ table {
 
 .landing-title {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 12vmin;
+  font-size: 10vmin;
   text-align: center;
 
   -webkit-animation: moveup 1.5s; /* Safari, Chrome and Opera > 12.1 */
@@ -126,14 +130,14 @@ table {
 
 .landing-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   opacity: 0.7;
   line-height: 4vmin;
   width: 60%;
 }
 
 .landing-text h1 {
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   padding-bottom: 3vmin;
   text-align: center;
 }
@@ -184,9 +188,9 @@ table {
 
 .featured-box {
   flex: auto;
-  border: 1px solid red;
-  margin-bottom: 2vmin;
-  height: 30vmin;
+  border: 1px solid #000000;
+  margin-bottom: 4vmin;
+  height: auto;
 }
 
 .featured-box h2 {
@@ -198,7 +202,14 @@ table {
 
 .featured-box p {
   font-size: 2vmin;
-  padding: 0vmin 3vmin;
+  padding: 0vmin 3vmin 2vmin 3vmin;
+}
+
+.featured-box img {
+	height: 7vmin;
+	padding: 3vmin;
+	display: block;
+	margin: 0 auto;
 }
 
 /* Lists */
