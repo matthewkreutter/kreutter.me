@@ -95,7 +95,7 @@ html {
 /* Flexbox */
 
 .flex-landing {
-	height: 40vh;
+	height: 40vmin;
 	width: 100vw;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ html {
 }
 
 .flex-portfolio {
-  height: 40vh;
+  height: 40vmin;
   width: 100vw;
   display: flex;
   flex-direction: row;
