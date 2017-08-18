@@ -120,6 +120,10 @@ html {
   color: #000000;
 }
 
+.flex-portfolio-text {
+  margin-bottom: 5vmin;
+}
+
 /* Landing */
 
 .landing-title {
