@@ -134,7 +134,7 @@ html {
           animation: moveup 2s;
 
    margin-bottom: 4vmin;
-   margin-top: 20vmin;
+   margin-top: 10vmin;
 }
 
 .landing-text {
@@ -172,8 +172,15 @@ html {
   align-content: space-around;
 }
 
+.portfolio-item {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.50);
+  margin-bottom: 4vmin;
+  padding: 5vmin;
+}
+
 .portfolio img {
-	width: 50vw;
+	width: 30vw;
 	height: auto;
 }
 

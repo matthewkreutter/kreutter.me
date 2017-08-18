@@ -18,7 +18,7 @@
 .pushy a {
   display: block;
   color: #b3b3b1;
-  margin: 4vmin 0vmin;
+  padding: 4vmin 0vmin;
   text-decoration: none;
 
   -webkit-transition: color 300ms;
@@ -110,7 +110,7 @@
   cursor: pointer;
   margin-left: 5vmin;
   margin-top: 5vmin;
-  
+
   position: fixed;
 }
 
