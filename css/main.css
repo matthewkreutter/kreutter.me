@@ -58,7 +58,15 @@ html {
   display: inline;
 }
 
-.work-projects {
+.work-industry {
+  display: none;
+}
+
+.work-education {
+  display: none;
+}
+
+.personal-projects {
   display: none;
 }
 
@@ -87,7 +95,7 @@ html {
 /* Flexbox */
 
 .flex-landing {
-	height: 30vh;
+	height: 40vh;
 	width: 100vw;
   display: flex;
   flex-direction: column;
@@ -119,19 +127,20 @@ html {
   font-size: 10vmin;
   text-align: center;
 
-  -webkit-animation: moveup 1.5s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: moveup 1.5s; /* Firefox < 16 */
-      -ms-animation: moveup 1.5s; /* Internet Explorer */
-       -o-animation: moveup 1.5s; /* Opera < 12.1 */
-          animation: moveup 1.5s;
+  -webkit-animation: moveup 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: moveup 2s; /* Firefox < 16 */
+      -ms-animation: moveup 2s; /* Internet Explorer */
+       -o-animation: moveup 2s; /* Opera < 12.1 */
+          animation: moveup 2s;
 
    margin-bottom: 4vmin;
+   margin-top: 20vmin;
 }
 
 .landing-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5vmin;
-  opacity: 0.7;
+  color: grey;
   line-height: 4vmin;
   width: 60%;
 }
@@ -221,7 +230,7 @@ html {
 
 .list-inline a {
 	color: #000000;
-	opacity: 0.7;
+	opacity: 0.6;
 	transform: scale(1,1);
 	-webkit-transition: opacity 300ms ease;
 	-moz-transition: opacity 300ms ease;

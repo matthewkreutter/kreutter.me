@@ -6,7 +6,7 @@
 
 .pushy {
   position: fixed;
-  width: 35vmin;
+  width: 41vmin;
   height: 100%;
   top: 0;
   z-index: 9999;
@@ -20,12 +20,15 @@
   color: #b3b3b1;
   margin: 4vmin 0vmin;
   text-decoration: none;
+
+  -webkit-transition: color 300ms;
+    -moz-transition: color 300ms;
+    -ms-transition: color 300ms;
+    -o-transition: color 300ms;
+    transition: color 300ms;
 }
 .pushy a:hover {
   color: #FFF;
-}
-.pushy ul:first-child {
-  margin-top: 6vh;
 }
 .pushy.pushy-left {
   left: 0;
@@ -37,36 +40,58 @@
 .pushy-content {
   visibility: hidden;
   font-family: 'Open Sans', sans-serif;
-  font-size: 3vmin;
-  text-align: center;
+  font-size: 2.5vmin;
+  text-align: left;
+  padding: 0vmin 1vmin;
+}
+
+.pushy-content .fa {
+  font-size: 2.0vmin;
+  padding: 0vmin 2vmin;
+}
+
+.pushy-content li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pushy-content li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pushy-content img {
+  width: 23vmin;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  display: block;
+  margin: 3vmin auto;
 }
 
 /* Menu Movement */
 
 .pushy-left {
-  -webkit-transform: translate3d(-35vmin, 0, 0);
-  -ms-transform: translate3d(-35vmin, 0, 0);
-  transform: translate3d(-35vmin, 0, 0);
+  -webkit-transform: translate3d(-41vmin, 0, 0);
+  -ms-transform: translate3d(-41vmin, 0, 0);
+  transform: translate3d(-41vmin, 0, 0);
 }
 
 .pushy-open-left #container,
 .pushy-open-left .push {
-  -webkit-transform: translate3d(35vmin, 0, 0);
-  -ms-transform: translate3d(35vmin, 0, 0);
-  transform: translate3d(35vmin, 0, 0);
+  -webkit-transform: translate3d(41vmin, 0, 0);
+  -ms-transform: translate3d(41vmin, 0, 0);
+  transform: translate3d(41vmin, 0, 0);
 }
 
 .pushy-right {
-  -webkit-transform: translate3d(35vmin, 0, 0);
-  -ms-transform: translate3d(35vmin, 0, 0);
-  transform: translate3d(35vmin, 0, 0);
+  -webkit-transform: translate3d(41vmin, 0, 0);
+  -ms-transform: translate3d(41vmin, 0, 0);
+  transform: translate3d(41vmin, 0, 0);
 }
 
 .pushy-open-right #container,
 .pushy-open-right .push {
-  -webkit-transform: translate3d(-35vmin, 0, 0);
-  -ms-transform: translate3d(-35vmin, 0, 0);
-  transform: translate3d(-35vmin, 0, 0);
+  -webkit-transform: translate3d(-41vmin, 0, 0);
+  -ms-transform: translate3d(-41vmin, 0, 0);
+  transform: translate3d(-41vmin, 0, 0);
 }
 
 .pushy-open-left .pushy,
@@ -83,8 +108,10 @@
 .menu-btn {
   font-size: 5vmin;
   cursor: pointer;
-  margin-right: 5vmin;
+  margin-left: 5vmin;
   margin-top: 5vmin;
+  
+  position: fixed;
 }
 
 /* Menu Transitions */

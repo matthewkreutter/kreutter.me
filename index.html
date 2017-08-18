@@ -19,18 +19,21 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="pushy pushy-right">
+    <nav class="pushy pushy-left">
       <div class="pushy-content">
+          <img src="assets/headshot.jpg"/>
           <ul>
-              <li class="pushy-link"><a href="#" id="about-me">About Me</a></li>
-              <li class="pushy-link"><a href="#" id="work-projects">Work / Projects</a></li>
-              <li class="pushy-link"><a href="assets/resume.pdf" target="_blank">Resume</a>
+              <li class="pushy-link"><a href="#" id="about-me"><i class="fa fa-user"></i> About Me</a></li>
+              <li class="pushy-link"><a href="#" id="work-industry"><i class="fa fa-code"></i>Software Engineering</a></li>
+              <li class="pushy-link"><a href="#" id="work-education"><i class="fa fa-users"></i>Peer Education</a></li>
+              <li class="pushy-link"><a href="#" id="personal-projects"><i class="fa fa-paint-brush"></i>Personal Projects</a></li>
+              <li class="pushy-link"><a href="assets/resume.pdf" target="_blank"><i class="fa fa-file-text"></i>Resume</a>
               <!-- <li class="pushy-link"><a href="#" id="contact">Contact</a></li> -->
           </ul>
       </div>
     </nav>
     <div class="site-overlay"></div>
-    <a class="menu-btn pull-right">☰</a>
+    <a class="menu-btn pull-left">☰</a>
     <div class="flex-landing">
       <div class="landing-title">
         <p>Matthew S. Kreutter</p>
@@ -45,11 +48,12 @@
     <div class="flex-portfolio">
       <div class="landing-text about-me">
         <h1>About Me</h1>
-        <p>I'm a senior at Washington University in St. Louis, currently pursuing a BS in Computer Science with a minor in Entrepreneurship.<br><br> I like building food, listening to software, and eating music, and enjoy approaching things a little differently than the status quo.</p>
+        <p>I'm a senior at Washington University in St. Louis, currently pursuing a BS in Computer Science with a minor in Entrepreneurship. I like building food, listening to software, and eating music, and I tend to approach things a little differently than the status quo.<br><br>If you'd like to discuss how we might be able to work together in the future (or even just to chat), don't hesitate to get in touch by clicking the little mail icon above.</p>
       </div>
-      <div class="landing-text work-projects">
-        <h1>Work Experience / Projects</h1>
-        <p>I've interned all over the place, from the energy sector to a philanthropic sports equipment supplier, and each experience has given me some perspective on how software impacts our lives.<br><br> Take a look below at some of the stuff I've accomplished in and around the industry. If you'd prefer a more minimalist, nitty-gritty overview, check out my resume or my LinkedIn.</p>
+
+      <div class="landing-text work-industry">
+        <h1>Software Engineering</h1>
+        <p>I've interned all over the place, from the energy sector to a philanthropic sports equipment supplier, and each experience has given me unique insight into how software impacts our lives.<br><br> Take a look below at some of the stuff I've accomplished in and around the industry. If you'd prefer a more minimalist, nitty-gritty overview, check out my resume or my LinkedIn.</p>
         <br><br>
         <div class="featured-box">
           <img src="assets/IMCLogo.png"/>
@@ -63,12 +67,6 @@
           <img src="assets/VisaLogo.png"/>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>
-        <!-- EDUCATION SECTION w/ TUTORING, LIVE?
-        <div class="featured-box">
-          <h2>Washington University in St. Louis LOGO</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        </div>
-      -->
         <div class="featured-box">
           <img src="assets/KizaziLogo.png"/>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -78,6 +76,34 @@
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>
       </div>
+
+      <div class="landing-text work-education">
+        <h1>Peer Education</h1>
+        <p>I like helping people learn stuff. In high school, I tutored two middle schoolers in Spanish and Algebra, which was my first real experience in "teaching". Additionally, I was the assistant coach at my school's youth soccer summer camp, herding kids from 5-12 years old and (hopefully) improving their technical skills along the way.<br><br> In college, I was a Computer Science TA for the introductory Java class, CSE131, for sophomore and junior year. I specifically stayed with the introductory class because I felt that it gave me the best opportunity to help younger devs get a solid foundation in Computer Science before moving on to tougher classes.<br><br>Last but certainly not least, I was a member of an on-campus student group called LIVE (Leaders in Interpersonal Violence Education). LIVE provides facilitations regarding topics such as sexual assault and toxic masculinity with the goal of providing a safe, productive environment for some tough, but necessary, conversations.</p>
+        <br><br>
+        <div class="featured-box">
+          <h2>Washington University in St. Louis LOGO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="featured-box">
+          <h2>LIVE LOGO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="featured-box">
+          <h2>St. John's LOGO</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+      </div>
+
+      <div class="landing-text personal-projects">
+        <h1>Personal Projects</h1>
+        <div class="portfolio">
+          <a href="https://github.com/matthewkreutter/Lone-Commando" target="_blank" class="portfolio-hover"><img src="assets/lone-commando-still.png" id="animate-lone-commando"></a>
+          <a href="https://github.com/matthewkreutter/Dot-Eat-Dot" target="_blank" class="portfolio-hover"><img src="assets/dot-eat-dot-still.png" id="animate-dot-eat-dot"></a>
+          <a href="https://www.kizazi.com/" target="_blank"><img src="assets/KizaziLanding.png" class="portfolio-hover"></a>
+        </div>
+      </div>
+
       <!--
       <div class="landing-text contact">
         <h1>Contact</h1>
@@ -85,30 +111,25 @@
       </div>
       -->
     </div>
-    <!--
-    <div class="work-projects">
-      <div class="portfolio">
-        <a href="https://github.com/matthewkreutter/Lone-Commando" target="_blank" class="portfolio-hover"><img src="assets/lone-commando-still.png" id="animate-lone-commando"></a>
-        <a href="https://github.com/matthewkreutter/Dot-Eat-Dot" target="_blank" class="portfolio-hover"><img src="assets/dot-eat-dot-still.png" id="animate-dot-eat-dot"></a>
-        <a href="https://www.kizazi.com/" target="_blank"><img src="assets/KizaziLanding.png" class="portfolio-hover"></a>
-      </div>
-    </div>
-    -->
     <script>
       var which = 1;
       function clearAll() {
-        $(".work-projects").fadeOut();
-        $(".contact").fadeOut();
         $(".about-me").fadeOut();
+        $(".work-industry").fadeOut();
+        $(".work-education").fadeOut();
+        $(".personal-projects").fadeOut();
       }
       function fadeInAboutMe(){
         $(".about-me").fadeIn();
       }
-      function fadeInWorkProjects(){
-        $(".work-projects").fadeIn();
+      function fadeInWorkIndustry(){
+        $(".work-industry").fadeIn();
       }
-      function fadeInContact(){
-        $(".contact").fadeIn();
+      function fadeInWorkEducation(){
+        $(".work-education").fadeIn();
+      }
+      function fadeInPersonalProjects(){
+        $(".personal-projects").fadeIn();
       }
       $(document).ready(function ()
       {
@@ -136,20 +157,28 @@
               which = 1;
             }
         });
-        $("#work-projects").click(
+        $("#work-industry").click(
           function() {
             if(which != 2) {
               clearAll();
-              setTimeout(function(){fadeInWorkProjects()}, 400);
+              setTimeout(function(){fadeInWorkIndustry()}, 400);
               which = 2;
             }
         });
-        $("#contact").click(
+        $("#work-education").click(
           function() {
             if(which != 3) {
               clearAll();
-              setTimeout(function(){fadeInContact()}, 400);
+              setTimeout(function(){fadeInWorkEducation()}, 400);
               which = 3;
+            }
+        });
+        $("#personal-projects").click(
+          function() {
+            if(which != 4) {
+              clearAll();
+              setTimeout(function(){fadeInPersonalProjects()}, 400);
+              which = 4;
             }
         });
       });
