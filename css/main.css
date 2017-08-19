@@ -92,6 +92,10 @@ html {
   opacity: 1;
 }
 
+.pad-bottom {
+	padding-bottom: 5vmin;
+}
+
 /* Flexbox */
 
 .flex-landing {
@@ -168,12 +172,7 @@ html {
 /* Portfolio */
 
 .portfolio {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-  align-items: center;
-  align-content: space-around;
+
 }
 
 .portfolio-item {
@@ -184,8 +183,15 @@ html {
 }
 
 .portfolio img {
-	width: 30vw;
+	width: 80%;
 	height: auto;
+	margin: 0vmin 10%;
+}
+
+.portfolio h2 {
+  font-size: 3vmin;
+  padding-bottom: 3vmin;
+  padding-top: 2vmin;
 }
 
 .portfolio .portfolio-hover {
