@@ -132,7 +132,7 @@ html {
 
 .landing-title {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 10vmin;
+  font-size: 11vmin;
   text-align: center;
 
   -webkit-animation: moveup 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -147,14 +147,14 @@ html {
 
 .landing-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.5vmin;
+  font-size: 2.75vmin;
   color: grey;
   line-height: 4vmin;
   width: 60%;
 }
 
 .landing-text h1 {
-  font-size: 3.5vmin;
+  font-size: 4vmin;
   padding-bottom: 3vmin;
   text-align: center;
 }
@@ -163,38 +163,15 @@ html {
   text-align: justify;
 }
 
-.landing-link {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 4vmin;
-  text-align: center;
-}
-
 /* Portfolio */
 
-.portfolio {
-
-}
-
-.portfolio-item {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.50);
-  margin-bottom: 4vmin;
-  padding: 5vmin;
-}
-
-.portfolio img {
+.portfolio-image {
 	width: 80%;
 	height: auto;
 	margin: 0vmin 10%;
 }
 
-.portfolio h2 {
-  font-size: 3vmin;
-  padding-bottom: 3vmin;
-  padding-top: 2vmin;
-}
-
-.portfolio .portfolio-hover {
+.portfolio-hover {
     opacity: 0.8;
     transform: scale(1,1);
     -webkit-transition: transform 300ms ease, opacity 300ms ease;
@@ -204,7 +181,7 @@ html {
     transition: transform 300ms ease, opacity 300ms ease;
 }
 
-.portfolio .portfolio-hover:hover {
+.portfolio-hover:hover {
     text-decoration: none;
     opacity: 1;
     transform: scale(1.03,1.03);
@@ -219,20 +196,27 @@ html {
   height: auto;
 }
 
-.featured-box h2 {
-  font-size: 3.3vmin;
-  padding-bottom: 3vmin;
-  padding-top: 2vmin;
-  text-align: center;
-}
-
 .featured-box p {
-  font-size: 2vmin;
+  font-size: 2.75vmin;
   padding: 0vmin 3vmin 2vmin 3vmin;
 }
 
-.featured-box img {
+.featured-box h2 {
+  font-size: 3.25vmin;
+  padding-bottom: 3vmin;
+  padding-top: 2vmin;
+	text-align: center;
+}
+
+.logo-image-long {
 	height: 7vmin;
+	padding: 3vmin;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo-image-square {
+	height: 14vmin;
 	padding: 3vmin;
 	display: block;
 	margin: 0 auto;
