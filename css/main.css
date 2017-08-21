@@ -92,20 +92,17 @@ hr.faded-sides {
   display: none;
 }
 
-.contact a {
+.clean-link {
   text-decoration: none;
-  color: #000000;
-  opacity: 0.85;
-  transform: scale(1,1);
+  opacity: 0.7;
   -webkit-transition: opacity 300ms ease;
   -moz-transition: opacity 300ms ease;
   -ms-transition: opacity 300ms ease;
   -o-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
-  padding: 2vmin;
 }
 
-.contact a:hover {
+.clean-link:hover {
   text-decoration: none;
   opacity: 1;
 }
@@ -114,7 +111,7 @@ hr.faded-sides {
 
 .landing-title {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 11vmin;
+  font-size: 10vmin;
   text-align: center;
 
   -webkit-animation: moveup 2s; /* Safari, Chrome and Opera > 12.1 */
