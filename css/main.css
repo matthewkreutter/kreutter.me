@@ -60,7 +60,7 @@ html {
 hr.faded-sides {
   border: 0;
   height: 1px;
-	width: 40%;
+	width: 60%;
 	margin-bottom: 3vmin;
 	margin-top: 3vmin;
   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
@@ -304,8 +304,8 @@ hr.faded-sides {
 
 .slideshow-dot {
   cursor:pointer;
-  height: 13px;
-  width: 13px;
+  height: 1.5vmin;
+  width: 1.5vmin;
   margin: 0 2px;
 	margin-bottom: 5vmin;
   background-color: #bbb;
