@@ -17,6 +17,10 @@ function fadeInWorkEducation(){
 function fadeInPersonalProjects(){
   $(".personal-projects").fadeIn();
 }
+var lone_commando_gif = new Image();
+lone_commando_gif.src = "assets/lone-commando.gif";
+var dot_gif = new Image();
+dot_gif.src = "assets/dot-eat-dot.gif";
 $(document).ready(function ()
 {
   $("#animate-lone-commando").hover(

@@ -35,52 +35,55 @@
     <div class="site-overlay"></div>
     <a class="menu-btn pull-left">☰</a>
     <div class="flex-landing">
-      <div class="landing-title">
-        <p>Matthew S. Kreutter</p>
-      </div>
-      <div class="list-inline">
-        <a href="http://github.com/matthewkreutter/" target="_blank"><i class="fa fa-github"></i></a>
-        <a href="http://linkedin.com/in/matthew-kreutter" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="mailto:matthew.kreutter@gmail.com" target="_top"><i class="fa fa-envelope"></i></a>
+      <div class="landing-container popout-box">
+        <div class="landing-title">
+          <p>Matthew S. Kreutter</p>
+        </div>
+        <div class="list-inline">
+          <a href="http://github.com/matthewkreutter/" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="http://linkedin.com/in/matthew-kreutter" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:matthew.kreutter@gmail.com" target="_top"><i class="fa fa-envelope"></i></a>
+        </div>
       </div>
     </div>
-    <br>
     <div class="flex-portfolio">
       <div class="landing-text about-me">
-        <h1>About Me</h1>
-        <hr class="faded-sides">
-        <p>I'm a senior at Washington University in St. Louis, currently pursuing a BS in Computer Science with a minor in Entrepreneurship. I like building food, listening to software, and eating music, and I tend to approach things a little differently than the status quo.<br><br>If you'd like to discuss how we might be able to work together in the future (or even just to chat), don't hesitate to get in touch by clicking the little mail icon above! You can peruse my resume (bit of a tongue twister, eh?) and some other cool stuff about me by clicking the hamburger in the top left.</p>
+        <div class="flex-portfolio-text popout-box">
+          <h1>About Me</h1>
+          <hr class="faded-sides">
+          <p>I'm a senior at Washington University in St. Louis, currently pursuing a BS in Computer Science with a minor in Entrepreneurship.<br><br>If you'd like to discuss how we might be able to work together in the future (or even just to chat), don't hesitate to get in touch by clicking the little mail icon above! You can peruse my resume and some other cool stuff about me by clicking the hamburger in the top left.</p>
+        </div>
       </div>
 
       <div class="landing-text work-industry">
-        <div class="flex-portfolio-text">
+        <div class="flex-portfolio-text popout-box">
           <h1>Professional Work</h1>
           <hr class="faded-sides">
-          <p>I've interned all over the place, from the energy sector to a philanthropic sports equipment supplier, and each experience has given me some interesting insight into how software impacts my life. For specifics about my work experience, take a look below at some of the stuff I've accomplished in and around the industry. If you'd prefer a more minimalist, nitty-gritty overview, check out my resume or my LinkedIn.</p>
+          <p>I've been a developer all over the place, from the energy sector to a philanthropic sports equipment supplier. For specifics about my work experience, take a look below at some of my accomplishments.<br><br>If you'd prefer a more minimalist, nitty-gritty overview, check out my resume (hamburger in the top left) or my LinkedIn ("<i class="fa fa-linkedin"></i>" underneath my giant name above).</p>
         </div>
-        <div class="slideshow-container">
+        <div class="slideshow-container popout-box">
           <div class="featured-box slideshow-slide fade">
             <img src="assets/IMCLogo.png" class="logo-image-long"/>
-            <p>IMC Financial Markets is a high-frequency/algorithmic/proprietary trading firm and key market maker in various products across exchanges worldwide, with offices in Chicago, Amsterdam, and Sydney.<br><br> I had the opportunity to intern at IMC this past summer as a software engineer, and my project was to create a trades analysis tool that leveraged Spark and HDFS to process hundreds of thousands of missed trades a day to provide traders with concrete reasons for why we missed out on profitable trading opportunities. I can't go too much more into detail, as the specifics of what I completed are proprietary (I've always wanted to be able to say this, and now I finally can!), but suffice to say I improved a ton as a Java and Spark developer.
+            <p>IMC Financial Markets is a high-frequency/algorithmic trading firm based out of Amsterdam. I had the opportunity to intern at IMC this past summer as a software engineer in their Chicago office, and my project was to create a trades analysis tool that leveraged Spark and HDFS.<br><br>I can't go too much more into detail, as the specifics of what I completed are proprietary (I've always wanted to be able to say this, and now I finally can!), but the gist of my project was to process hundreds of thousands of trades a day to provide concrete reasons as to why IMC might have missed out on profitable opportunities.
           </div>
           <div class="featured-box slideshow-slide fade">
             <img src="assets/NisaLogo.png" class="logo-image-long"/>
-            <p>Nisa Investment Advisors is an investment manager for institutional investors, based out of St. Louis. They focus on risk-controlled asset management, and have been reported to have over $140B in AUM (if you were curious... I was, which is why I Googled it while writing this section). I interned with Nisa during the fall of my junior year at Wash U, and was in a fairly general software IT role while there.<br><br>My first project was to create an OData service to parse data from a SQL Server view and display the data to a web endpoint, which was implemented primarily in C# and (obviously) made use of the OData RESTful API. For the remainder of the semester, I was in charge of architechting a proof-of-concept/version zero for an automated testing framework to routinely test Nisa's proprietary web applications. I wrote the test suite in TestComplete, making use of a built-in language called TestComplete JScript, and implemented the surrounding software that automated and recorded the tests in C# and SQL.</p>
+            <p>Nisa Investment Advisors is an investment manager based out of St. Louis that primarily serves institutional investors. I interned with Nisa during the fall of my junior year at Wash U, and filled a fairly general software IT role.<br><br>My first project was to create an OData service to parse data from a SQL Server view and display the data to a web endpoint, which was implemented primarily in C# and (obviously) made use of the OData RESTful API.<br><br>For the remainder of the semester, I architechted a proof-of-concept version zero of an automated testing framework to routinely test Nisa's proprietary web applications. I wrote the TestComplete test suite in a built-in language called TestComplete JScript, and implemented the surrounding software that automated and recorded the tests using C# and MySQL.</p>
           </div>
           <div class="featured-box slideshow-slide fade">
             <img src="assets/VisaLogo.png" class="logo-image-long"/>
-            <p>Unbeknownst to many, Visa is not actually in the credit card industry, but is instead a payments technology company. You learn something new every day! I interned at Visa in Austin my sophomore summer, and was a "Switching Systems and Network Processing Intern" (but you and I can just say "Software Developer Intern").<br><br>The biggest of my projects was optimizing and benchmarking Visa standard library functions in C++ to reduce overhead, which resulted in a whopping 2.6% improvement in system performance. If 2.6 doesn't seem like a big enough number for you, this might do the trick: the updates I made will save Visa $1,000,000 in rented black box space every three year cycle. Pretty neat, huh?</p>
+            <p>Unbeknownst to many, Visa is not actually in the credit card industry, but is instead a payments technology company. You learn something new every day! I interned at Visa in Austin my sophomore summer, and was a "Switching Systems and Network Processing Intern" (but you and I can just say "Software Developer Intern").<br><br>My biggest project that summer was optimizing and benchmarking Visa standard library functions in C++ to reduce overhead, which resulted in a whopping 2.6% improvement in system performance. If 2.6 doesn't seem like a big enough number for you, this might do the trick: the updates I made will save Visa $1,000,000 in rented black box space every three year cycle.</p>
           </div>
           <div class="featured-box slideshow-slide fade">
             <div style="padding-bottom: 3vmin;">
               <img src="assets/KizaziLogo.png" class="logo-image-long">
-              <p>A good friend of mine wanted to use the world's love for soccer to fuel altruism, and from his vision Kizazi was born. For every soccer ball bought, Kizazi takes a portion of the net profits and sends them over to Kiva to fund microloans for aspiring entrepreneurs in underprivileged or developing countries.<br><br>I worked for Kizazi my freshman summer, and my main focus was creating the website (though in a team of only five people, I had to pick up different responsibilities all across the board). Check out what we accomplished by clicking the landing page below!</p>
+              <p>A good friend of mine wanted to use the world's love for soccer to fuel altruism, and from his vision Kizazi was born. For every soccer ball bought, Kizazi takes a portion of the net profits and sends them over to Kiva to fund microloans for aspiring entrepreneurs in developing countries.<br><br>I worked for Kizazi my freshman summer, and my main focus was creating the website (though in a team of only five people, I had a lot of responsibilities all across the board). Check out what we accomplished by clicking the landing page below!</p>
             </div>
-            <a href="https://www.kizazi.com/" target="_blank"><img src="assets/KizaziLanding.png" class="portfolio-hover portfolio-image" style="margin-bottom: 4vmin;"></a>
+            <a href="https://www.kizazi.com/" target="_blank"><img src="assets/KizaziLanding.png" class="portfolio-hover portfolio-image"></a>
           </div>
           <div class="featured-box slideshow-slide fade">
             <img src="assets/FrontierUtilitiesLogo.png" class="logo-image-long"/>
-            <p>Frontier Utilities is a local Texas energy company that strives to provide low-cost, high quality service to its customers. I was lucky enough to work there the summer before I started college, and served as a very general data analysis / IT intern. This was my first "real job", and much to my surprise I actually got to do things other than move paper around and make coffee.<br><br>In fact, I was mentored directly by the company's CIO and worked on a variety of projects over the course of the summer. I wrote SQL queries to create in-depth reports on customer and company activity, such as P&L for a zipcode or client retention during a given month. Additionally, I wrote a few SQL stored procedures to update underlying data for reports that were then fed to users through an internal web app.</p>
+            <p>Frontier Utilities is Texas-based energy provider. I was lucky enough to work there the summer before I started college as a data analysis/IT intern. This was my first "real job", and much to my surprise I actually got to do things other than make coffee and move stacks of paper from point A to point B.<br><br>Instead, I was mentored directly by the company's CIO and worked on a variety of projects as they came up. I used MySQL and Excel to create in-depth reports on customer and company activity, such as P&L for a zipcode or client retention during a given month. And, I wrote a few SQL stored procedures to update underlying data for reports that were then fed to users through an internal web app.</p>
           </div>
           <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
@@ -95,15 +98,15 @@
       </div>
 
       <div class="landing-text work-education">
-        <div class="flex-portfolio-text">
+        <div class="flex-portfolio-text popout-box">
           <h1>Peer Education</h1>
           <hr class="faded-sides">
-          <p>I like helping people learn stuff -- there's something special about seeing someone's face light up when they finally understand a concept or problem you're going through. There's also just so much I've learned from teaching, whether it's gaining a deeper understanding of CS topics or becoming a more confident person in front of crowds, and all three experiences below have been incredibly rewarding.<br><br> I think that eventually I will want to become a teacher full time, maybe for something like introductory Computer Science at the middle school level to create the next generation of supercoders. But, with regards to my plans immediately after graduating, I think that ed-tech might be the best industry to mix my passion for education and software development. Who knows what the future holds!</p>
+          <p>I like helping people learn stuff, and the sections below highlight some of the ways I've tried to give back to the community as an "educator" (if I can even call myself that).<br><br>I think I'd like to some day teach Computer Science to middle or high schoolers, but for the time being I'm looking into ed-tech as a way to combine my passion for peer improvement with my love for software development.</p>
         </div>
-        <div class="slideshow-container">
+        <div class="slideshow-container popout-box">
           <div class="featured-box slideshow-slide fade">
             <img src="assets/WashULogo.png" class="logo-image-square"/>
-            <p>I was a Computer Science TA for the introductory Java class, CSE131, during sophomore and junior year. I specifically stayed with the introductory class because I felt that it gave me the best opportunity to help younger devs get a solid foundation in CS before moving on to tougher classes.<br><br>Additionally, I served as an Engineering Tutor, which gave me the opportunity to work one-on-one with struggling students to help them with some of the tougher concepts (*cough* recursion *cough*).</p>
+            <p>I was a Computer Science TA for the introductory Java class, CSE131, during my sophomore and junior years. I specifically stayed with the introductory class because I felt that it gave me the best opportunity to help younger students get a solid foundation in CS before moving on to tougher classes.<br><br>Additionally during that time, I served as an Engineering Tutor, which gave me the opportunity to work one-on-one with struggling students to help them with some of the tougher concepts (*cough* recursion *cough*).</p>
           </div>
           <div class="featured-box slideshow-slide fade">
             <img src="assets/LIVELogo.jpg" class="logo-image-square"/>
@@ -111,7 +114,7 @@
           </div>
           <div class="featured-box slideshow-slide fade">
             <img src="assets/SJSLogo.jpg" class="logo-image-square"/>
-            <p>While in high school, I tutored two middle schoolers in Spanish and algebra. These weekly sessions were my first real experience in "teaching", and it has been a lot of fun going home for breaks during college and seeing the kids I tutored grow up to become successful in high school and beyond.<br><br>I was also the assistant coach at my school's summer soccer camp, herding kids from 5-12 years old and (hopefully) improving their technical skills along the way.</p>
+            <p>While in high school, I tutored two middle schoolers in Spanish and algebra. These weekly sessions were my first real experience in peer education, and it's been a lot of fun going home during breaks from college and seeing the kids I tutored grow up to become successful in high school and beyond.<br><br>I was also the assistant coach at my high school's summer soccer camp, herding kids from 5-12 years old and (hopefully) improving their technical skills along the way.</p>
           </div>
           <a class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="slideshow-next" onclick="plusSlides(1)">&#10095;</a>
@@ -124,12 +127,12 @@
       </div>
 
       <div class="landing-text personal-projects">
-        <div class="flex-portfolio-text">
+        <div class="flex-portfolio-text popout-box">
           <h1>Personal Projects</h1>
           <hr class="faded-sides">
-          <p>I've showcased a couple independent projects I've worked on below, both of which you'll notice are small games (source code is available by clicking the respective image for either game). I've been an avid gamer my whole life, from Pokémon Red on the Game Boy Color to ranking in the top 5,000 League of Legends players in North America. While I haven't yet had the chance to fully dive deep into game development, it's an industry I hope to one day enter, as reflected by the software development I find myself doing in my spare time.<br><br>Of course, another side project I've worked on is this very website. This site, like me, will pretty much always be a work in progress, and I hope to keep improving and adding to it as my life unfolds. If you'd like to see why what you're looking at looks the way it does, check out the source code <a href="https://github.com/matthewkreutter/kreutter.me" target="_blank" class="clean-link">here</a>.</p></p>
+          <p>I've showcased a couple independent projects I've worked on below, both of which you'll notice are small games (source code is available by clicking either game's corresponding image). I've been an avid gamer my whole life, from Pokémon Red on the Game Boy Color to ranking in the top 5,000 League of Legends players in North America, and my love for videogames reflects in the software development I find myself doing on my own time.<br><br>Of course, you're looking at another side project I've worked on right now. This website, like me, will pretty much always be a work in progress, and I hope to keep improving and adding to it as my life unfolds. If you're interested, you can check out the source code <a href="https://github.com/matthewkreutter/kreutter.me" target="_blank" class="clean-link">here</a>.</p></p>
         </div>
-        <div class="slideshow-container">
+        <div class="slideshow-container popout-box">
           <div class="featured-box slideshow-slide fade">
             <div style="padding-bottom: 3vmin;">
               <img src="assets/lone-commando-logo.png" class="logo-image-long"/>
