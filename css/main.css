@@ -118,7 +118,7 @@ hr.faded-sides {
 
 .landing-title {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 8vmin;
+  font-size: 7vmin;
   text-align: center;
   margin-bottom: 4vmin;
 }
@@ -131,14 +131,14 @@ hr.faded-sides {
 
 .landing-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.75vmin;
+  font-size: 2.3vmin;
   color: #313131;
   line-height: 4vmin;
   width: 70%;
 }
 
 .landing-text h1 {
-  font-size: 4vmin;
+  font-size: 3.2vmin;
   text-align: center;
 }
 
@@ -203,6 +203,12 @@ hr.faded-sides {
     transform: scale(1.03,1.03);
 }
 
+.portfolio-container {
+	width: 70%;
+	padding: 0vmin 0vmin;
+	margin: 5vmin 0vmin;
+}
+
 /* Featured box */
 
 .featured-box {
@@ -212,13 +218,13 @@ hr.faded-sides {
 }
 
 .featured-box p {
-  font-size: 2.75vmin;
+  font-size: 2.5vmin;
 	padding: 0vmin 7vmin;
 	margin: auto;
 }
 
 .featured-box h2 {
-  font-size: 3.25vmin;
+  font-size: 3vmin;
   padding-bottom: 3vmin;
   padding-top: 2vmin;
 	text-align: center;
@@ -242,7 +248,7 @@ hr.faded-sides {
 
 .list-inline {
 	text-align: center;
-	font-size: 5vmin;
+	font-size: 4vmin;
 }
 
 .list-inline a {
@@ -268,7 +274,7 @@ hr.faded-sides {
   position: relative;
   margin: auto;
 
-	margin-bottom: 5vmin;
+	margin-bottom: 0vmin;
 }
 
 .slideshow-slide {
