@@ -4,6 +4,7 @@ function clearAll() {
   $(".work-industry").fadeOut();
   $(".work-education").fadeOut();
   $(".personal-projects").fadeOut();
+  $(".landing-box").fadeOut();
 }
 function fadeInAboutMe(){
   $(".about-me").fadeIn();
@@ -16,6 +17,9 @@ function fadeInWorkEducation(){
 }
 function fadeInPersonalProjects(){
   $(".personal-projects").fadeIn();
+}
+function fadeInLanding(){
+  $(".landing-box").fadeIn();
 }
 var lone_commando_gif = new Image();
 lone_commando_gif.src = "assets/lone-commando.gif";
@@ -44,6 +48,7 @@ $(document).ready(function ()
       if(which != 1) {
         clearAll();
         setTimeout(function(){fadeInAboutMe()}, 400);
+        setTimeout(function(){fadeInLanding()}, 400);
         which = 1;
       }
   });
